@@ -3,36 +3,36 @@ package Seminar01;
 import java.util.List;
 
 public class BottleOfWaterVendingMachine implements VendingMachine{
-    List<BottleOfWatter> bottleOfWatters;
+    List<BottleOfWater> bottleOfWater;
 
-    public BottleOfWaterVendingMachine(List<BottleOfWatter> products) {
-        this.bottleOfWatters = products;
+    public BottleOfWaterVendingMachine(List<BottleOfWater> products) {
+        this.bottleOfWater = products;
     }
 
-    public List<BottleOfWatter> getBottleOfWatters() {
-        return bottleOfWatters;
+    public List<BottleOfWater> getBottleOfWatters() {
+        return bottleOfWater;
     }
 
-    public void setBottleOfWatters(List<BottleOfWatter> bottleOfWatters) {
-        this.bottleOfWatters = bottleOfWatters;
+    public void setBottleOfWatters(List<BottleOfWater> bottleOfWater) {
+        this.bottleOfWater = bottleOfWater;
     }
 
     @Override
     public Product getProduct(String name) {
-        for (BottleOfWatter item : bottleOfWatters) {
+        for (BottleOfWater item : bottleOfWater) {
             if(item.getName().equals(name))
                 return item;
         }
         return null;
     }
     public Product getProduct(String name, double volume){
-        for (BottleOfWatter bottle : bottleOfWatters) {
+        for (BottleOfWater bottle : bottleOfWater) {
             if(bottle.getName().equals(name) && bottle.getVolume() == volume)
                 return bottle;
         }
         return null;
     }
-    public void addBottleOfWater(BottleOfWatter bottleOfWatter){
-        this.bottleOfWatters.add(bottleOfWatter);
+    public void addBottleOfWater(BottleOfWater bottleOfWatter){
+        this.bottleOfWater.add(bottleOfWatter);
     }
 }

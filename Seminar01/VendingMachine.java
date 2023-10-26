@@ -21,32 +21,33 @@ import java.util.List;
 //     }    
 // }
 
-public class VendingMachine {
-    private List<Product> products = new ArrayList<>();
+// public class VendingMachine {
+//     private List<Product> products = new ArrayList<>();
 
-    public VendingMachine(List<Product> products) {
-        this.products = products;
-    }
+//     public VendingMachine(List<Product> products) {
+//         this.products = products;
+//     }
 
-    public Product getProduct(String name) {
-        for (Product item : products) {
-            if (item.getName().equals(name))
-                return item;
-        }
-        return null;
-    }
+//     public Product getProduct(String name) {
+//         for (Product item : products) {
+//             if (item.getName().equals(name))
+//                 return item;
+//         }
+//         return null;
+//     }
 
-    public List<Product> getProducts() {
-        return products;
-    }
+//     public List<Product> getProducts() {
+//         return products;
+//     }
 
-    public void setProducts(List<Product> products) {
-        this.products = products;
-    }
-}
-// public interface VendingMachine {
-
-// Product getProduct(String name);
-
-// Product getProduct(String name, double volume);
+//     public void setProducts(List<Product> products) {
+//         this.products = products;
+//     }
 // }
+
+public interface VendingMachine {
+
+Product getProduct(String name);
+
+Product getProduct(String name, double volume);
+}

@@ -1,8 +1,8 @@
 package Seminar01;
 
-public class BottleOfWatter extends Product{
+public class BottleOfWater extends Product{
     private double volume;
-    public BottleOfWatter(String name, double cost, double volume) {
+    public BottleOfWater(String name, double cost, double volume) {
         super(name, cost);
         this.volume = volume;
     }
