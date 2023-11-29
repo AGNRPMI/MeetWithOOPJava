@@ -2,6 +2,7 @@ package Seminar05;
 
 import Seminar05.Controler.Controler;
 
+
 public class Main {
     public static void main(String[] args) {
         Controler controler = new Controler();
@@ -11,5 +12,7 @@ public class Main {
         controler.createStudent("3", "3","3","3");
         controler.createStudent("4", "4","4","4");
         controler.getAllStudent();
+
+    
     }
 }
